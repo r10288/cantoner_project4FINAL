@@ -1,0 +1,10 @@
+var siteURL = function(website) {
+	var myUrl = website
+	var urlType = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+	
+	if (myUrls.charAt(4) == "s") {
+		return true;
+	}else if (myUrl.charAt(4) == ":") {
+		return false;
+	}
+};

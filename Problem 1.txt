@@ -1,0 +1,12 @@
+var emailAddress = function (email) {
+	var myEmail = email
+	var addressType = (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/);
+	if (addressType.test(myEmail)) {
+		return true;
+	} else {
+		return false;
+	}
+};
+
+var randomEmail = emailAddress("ryan.cantone@fullsail.edu");
+console.log(randomEmail);

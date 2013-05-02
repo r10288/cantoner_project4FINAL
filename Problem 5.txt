@@ -1,0 +1,8 @@
+var dateSince = function(date) {
+	var christmasDay = date;
+	today = new Date(2013, 03, 27);
+	var days = 1000*60*60 * 24
+	console.log(Math.ceil((today.getTime() - christmasDay.getTime()) / (days)) + " days since Christmas! " + date)
+};
+
+dateSince(new Date(2012, 12, 25));

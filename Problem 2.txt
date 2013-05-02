@@ -1,0 +1,13 @@
+var phoneNumber = function (number) {
+	var randomPhone = number;
+	var phoneType = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+	if (phoneType.test(randomPhone)) {
+		var correctStyle = randomPhone.replace(phoneType, "($1) $2-$3");
+		return true;
+	} else {
+		return false;
+	}
+};
+
+var myNumber = phoneNumber("456-856-4425");
+console.log(myNumber);

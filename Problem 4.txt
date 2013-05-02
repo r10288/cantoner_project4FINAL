@@ -1,0 +1,11 @@
+var capitalLetter = function(name) {
+	String.prototype.toUpper = function() {
+		return this.replace(/\w\S*/g, function (txt) {
+			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+		});
+	}
+	name.toUpper();
+	console.log(name.toUpper());
+};
+
+capitalLetter("ryan cantone");
